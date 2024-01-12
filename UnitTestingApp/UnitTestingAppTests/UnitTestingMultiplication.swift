@@ -1,7 +1,7 @@
 import XCTest
 @testable import UnitTestingApp
 
-final class UnitTestingAppTests: XCTestCase {
+final class UnitTestingMultiplication: XCTestCase {
     
     var sut: DataModel!
 
@@ -14,8 +14,8 @@ final class UnitTestingAppTests: XCTestCase {
         let numberOne = 10
         let numberTwo = 20
 
-        let result = sut.addition(numberOne, numberTwo)
+        let result = sut.multiplication(numberOne, numberTwo)
         
-        XCTAssertEqual(result, 30, "Sum should be 30")
+        XCTAssertEqual(result, 200, "Multiplication should be 200")
     }
 }
